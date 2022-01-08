@@ -1,0 +1,166 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    max-width: 1200px;
+    box-sizing: border-box;
+    margin: auto;
+    background-color: mediumpurple ;
+}
+
+.header,
+.main,
+.footer {
+    width: 100%;
+    height: auto;
+}
+
+.button {
+    height: 70px;
+    width: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 27px;
+    border: none;
+    color: rgb(244, 244, 244);
+    background-color: orchid;
+    border-radius: 100px;
+    transition: 2s;
+}
+
+.button:hover {
+    border: none;
+    transform: scale(1.2) ;
+    background-color: purple;
+    color: black;
+    font-size: 30px;
+}
+
+.flex_container {
+    display: flex;
+    height: 150px;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.square {
+    display: flex;
+    justify-content: center ;
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    background-color: indigo;
+    font-size: 30px;
+    color: rgb(244, 244, 244);
+    transition: 2s ease-in-out;
+}
+
+.flex_square {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+.square:hover {
+    border: none;
+    transition: 2s ease-in-out;
+    transform: rotate(180deg);
+}
+
+.ball_container{
+    width: 100%;
+    height: 350px;
+    position: relative;
+}
+
+.ball {
+    position: absolute;
+    background-color: gold;
+    width: 50px;
+    height: 50px;
+    border-radius: 70px;
+    animation: ball 8s infinite ease-in-out;
+}
+
+.ball:hover {
+    animation-play-state: paused;
+}
+
+@keyframes ball {
+    from {
+        background-color: gold;
+        right:97%;
+        top:0%;
+    }
+
+    10% {
+        background-color: red;
+        right:80%;
+        top:90%;
+    }
+    20% {
+        background-color: blue;
+        right:60%;
+        top:0%;
+    }
+
+    30%{
+        background-color: chartreuse;
+        right:40%;
+        top:90%;
+    }
+
+    40%{
+        background-color: darkcyan;
+        right:20%;
+        top:0%;
+    }
+
+    50%{
+        background-color: darksalmon;
+        right:0%;
+        top:90%;
+
+    }
+
+    60%{
+        background-color: crimson;
+        right:20%;
+        top:0%;
+
+    }
+
+    70%{
+        background-color: bisque;
+        right:40%;
+        top:90%;
+
+    }
+
+    80%{
+        background-color: brown;
+        right:60%;
+        top:0%;
+
+    }
+
+    90%{
+        background-color: coral;
+        right:80%;
+        top:90%;
+
+    }
+
+    to {
+        background-color: gold;
+        right:97%;
+        top:0%;
+    }
+}
+
